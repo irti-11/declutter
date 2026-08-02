@@ -2,7 +2,6 @@
 
 <img width="937" height="478" alt="image" src="https://github.com/user-attachments/assets/989610a3-4e74-4e24-8537-1316f7703fe5" />
 
-
 A local only file sorter that runs entirely in your browser. Pick a messy folder, and it groups every file into folders based on its extension. No uploads, no server, no account. Your files never leave your device.
 
 ## Why I built this
@@ -30,6 +29,26 @@ Everything happens on your machine using the browser's File System Access API. N
 - **Manifest export.** Download a JSON file that records exactly what was moved. You can load it later to revert a sort, even after closing the tab or restarting your browser.
 - **Duplicate handling.** If a file with the same name already exists in the destination folder, it automatically renames the new one instead of overwriting it.
 - **Light and dark themes**, saved automatically for your next visit.
+
+## Getting it running locally
+
+No installation needed, since this is a single HTML file with everything built in.
+
+1. Clone the repo:
+```
+git clone https://github.com/irti-11/declutter.git
+```
+2. Open the folder:
+```
+cd declutter
+```
+3. Open `index.html` in a Chromium based browser (Chrome, Edge, or Brave). You can just double click the file, or open it directly from your browser with `File > Open`.
+
+That's it. No build step, no dependencies, no server needed to run it locally.
+
+## Live demo
+
+You can try it here without downloading anything: (https://irti-11.github.io/declutter/)
 
 ## How to use it
 
